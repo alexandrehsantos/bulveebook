@@ -1,22 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Logo from './component/Logo';
+
+const menuOptions = ['Documents', 'GitHub', 'Forum', 'My Collections'];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='App-header'>
+        <Logo></Logo>
+        <ul className='options'>
+          {menuOptions.map((option) =>
+            <li className='option'><p>{option}</p></li>
+          )}
+        </ul>
+
       </header>
     </div>
   );
