@@ -1,12 +1,20 @@
-// import Logo from '../Logo';
-// import './style.css'
+import Logo from "../Logo"
+import Menu from '../Menu'
+import styled from 'styled-components';
 
-// function Header(){
-//     return (
-//         <header className='App-header'>
-//             <Logo/>
-//         </header>
-//     )
-// }
+const Wrapper = styled.div`
+  background-color: white;
+  display: flex;
+`
 
-// export default Header;
+
+function Header() {
+  return (
+    <Wrapper>
+      <Logo />
+      <Menu />
+    </Wrapper>
+  )
+}
+
+export default Header;

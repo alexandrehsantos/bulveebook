@@ -1,22 +1,19 @@
 import './App.css';
 
-import Logo from './component/Logo';
+import Header from './component/Header';
+import styled from 'styled-components';
 
-const menuOptions = ['Documents', 'GitHub', 'Forum', 'My Collections'];
+const Wrapper = styled.div`
+  width: 100vw;
+  height: 100vw;
+  background-image: linear-gradient(90deg,#04081d 35%,#326589 165%);
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className='App-header'>
-        <Logo></Logo>
-        <ul className='options'>
-          {menuOptions.map((option) =>
-            <li className='option'><p>{option}</p></li>
-          )}
-        </ul>
-
-      </header>
-    </div>
+    <Wrapper>
+      <Header/>
+    </Wrapper>
   );
 }
 
