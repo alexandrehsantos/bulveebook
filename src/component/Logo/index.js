@@ -1,20 +1,16 @@
-import logo from '../../images/Logo.png'
+import logo from '../../images/logoCapitalizado.png'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
     display: flex;
-    font-size: 35px;
-    color: gray;
+    font-size: 45px;
+    color: black;
     align-items: center;
 `
 
 const LogoImg = styled.div`
     display: flex;
-    max-width: 125px;
-    max-height: 125px;
-    margin-right: 180px;
 `
-
 
 function Logo() {
     return (
@@ -24,7 +20,7 @@ function Logo() {
                     alt='logo'
                 ></img>
             </LogoImg>
-            <p><strong>Shame</strong>Server</p>
+            <p><strong>Bulvee</strong>Books</p>
         </Wrapper>
     )
 }
